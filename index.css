@@ -76,7 +76,7 @@ button {
     height: 200%;
 }
 
-#mapGraphic {
+#mapGraphic, #mapGraphic2 {
     /* position: relative; */
     display: flex;
     /* position: fixed; */
