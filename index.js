@@ -90,10 +90,6 @@ function initMap() {
         draggable: false
          });
 
-
-        
-        
-        
        // Le asignamos el mapa a los marcadores.
        marker1.setMap(map);
         marker2.setMap(map);
@@ -107,53 +103,49 @@ function initMap() {
         marker10.setMap(map);
        }
 
-dbRef.on("child_added", snap => {
+       dbRef.on("child_added", snap => {
         cardsContainer.innerHTML +=
          `<div id="info">
          <h3>${snap.val().Name}</h3>
          <p>${snap.val().CheckIn}</p>
-         <p>${snap.val().Location}</p>
          </div>`
     });
-
-document.getElementById("morning").addEventListener("click", ()=>{
+        
+    document.getElementById("morning").addEventListener("click", ()=>{
         cardsContainer.innerHTML="";
         dbRef.on("child_added", snap => {
-                if(snap.val().CheckIn==="6hr"){
+                if(snap.val().Location ==="1"){
                 cardsContainer.innerHTML +=
                 `<div id="info">
                 <h3>${snap.val().Name}</h3>
                 <p>${snap.val().CheckIn}</p>
-                <p>${snap.val().Location}</p>
                 </div>`
-                }                
-            });
+                }
+        });
     })
 
     document.getElementById("evening").addEventListener("click", ()=>{
         cardsContainer.innerHTML="";
         dbRef.on("child_added", snap => {
-                if(snap.val().CheckIn==="14hr"){
+                if(snap.val().Location==="2"){
                 cardsContainer.innerHTML +=
                 `<div id="info">
                 <h3>${snap.val().Name}</h3>
                 <p>${snap.val().CheckIn}</p>
-                <p>${snap.val().Location}</p>
                 </div>`
-                }                
-            });
+                }
+        });
     })
     
- document.getElementById("night").addEventListener("click", ()=>{
+    document.getElementById("night").addEventListener("click", ()=>{
         cardsContainer.innerHTML="";
         dbRef.on("child_added", snap => {
-                if(snap.val().CheckIn==="22hr"){
+                if(snap.val().Location==="3"){
                 cardsContainer.innerHTML +=
                 `<div id="info">
          <h3>${snap.val().Name}</h3>
          <p>${snap.val().CheckIn}</p>
-         <p>${snap.val().Location}</p>
          </div>`
-                }                
-            });
+                }
+        });
     })

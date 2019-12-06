@@ -19,8 +19,8 @@ header{
 }
 #nameBosch {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 595px;
+    margin-top: 50px;
     width: 50%;
 }
 #menuNav{

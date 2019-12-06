@@ -27,5 +27,24 @@ const chart = new Chart(ctx, {
     options: {}
 });
 
+/*function renderChart ( users ) {
 
+    console.log(users)
+    let ctx = document.getElementById('myChart').getContext('2d');
+    let lineChart = new Chart(ctx, {
+      // The type of chart we want to create
+        type: 'line',
+     // The data for our dataset
+        data: {
+        labels: users.map((users) => users.CheckIn),
+        datasets: [{
+          label: 'Location',
+          backgroundColor: 'rgba(128,164,237, 0.8)',
+          borderColor: 'rgba(128,164,237, 1)',
+          data: users.map((users) => users.Location)
+        }]
+      }
+    })
+  }
 
+renderChart(dataChar)*/

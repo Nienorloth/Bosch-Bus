@@ -17,9 +17,13 @@
             <img class="colorBosch" src="https://www.bosch-presse.de/pressportal/de/media/res/gfx/supergraphic.svg"/>
             <img id="nameBosch" src="./images/boschlogoname.jpeg"/>
             <nav id="menuNav">  
-                <button id="morning">Morning</button>
-                <button id="evening">Evening</button> 
-                <button id="night">Night</button>
+                <form name="formulario" action="0">
+                    <select name="turnos"> 
+                        <option id="morning" value="0">Matutino
+                        <option id="evening" value="1">Vespertino
+                        <option id="night" value="2">Nocturno
+                    </select>
+                </form>
                 <button id="mapGraphic2">Gráfica</button>  
                 <button id="mapGraphic">Mapa</button>
             </nav>
@@ -53,6 +57,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+    <script  src="./databaseGraphic.js"></script>
+    <script  src="./app.js"></script> 
     <script src="app.js"></script>
     <script src="index.js"></script>
 </body>
