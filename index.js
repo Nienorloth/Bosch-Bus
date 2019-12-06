@@ -109,20 +109,23 @@ function initMap() {
 
 dbRef.on("child_added", snap => {
         cardsContainer.innerHTML +=
-         `<h3>${snap.val().Name}</h3>
-         <p id="hour">${snap.val().CheckIn}</p>
-         <p>${snap.val().Location}</p>`
+         `<div id="info">
+         <h3>${snap.val().Name}</h3>
+         <p>${snap.val().CheckIn}</p>
+         <p>${snap.val().Location}</p>
+         </div>`
     });
 
 document.getElementById("morning").addEventListener("click", ()=>{
         cardsContainer.innerHTML="";
         dbRef.on("child_added", snap => {
-                // const li = document.createElement("li");
                 if(snap.val().CheckIn==="6hr"){
                 cardsContainer.innerHTML +=
-                 `<h3>${snap.val().Name}</h3>
-                 <p id="hour">${snap.val().CheckIn}</p>
-                 <p>${snap.val().Location}</p>`
+                `<div id="info">
+                <h3>${snap.val().Name}</h3>
+                <p>${snap.val().CheckIn}</p>
+                <p>${snap.val().Location}</p>
+                </div>`
                 }                
             });
     })
@@ -130,25 +133,27 @@ document.getElementById("morning").addEventListener("click", ()=>{
     document.getElementById("evening").addEventListener("click", ()=>{
         cardsContainer.innerHTML="";
         dbRef.on("child_added", snap => {
-                // const li = document.createElement("li");
                 if(snap.val().CheckIn==="14hr"){
                 cardsContainer.innerHTML +=
-                 `<h3>${snap.val().Name}</h3>
-                 <p id="hour">${snap.val().CheckIn}</p>
-                 <p>${snap.val().Location}</p>`
+                `<div id="info">
+                <h3>${snap.val().Name}</h3>
+                <p>${snap.val().CheckIn}</p>
+                <p>${snap.val().Location}</p>
+                </div>`
                 }                
             });
     })
-
+    
  document.getElementById("night").addEventListener("click", ()=>{
         cardsContainer.innerHTML="";
         dbRef.on("child_added", snap => {
-                // const li = document.createElement("li");
                 if(snap.val().CheckIn==="22hr"){
                 cardsContainer.innerHTML +=
-                 `<h3>${snap.val().Name}</h3>
-                 <p id="hour">${snap.val().CheckIn}</p>
-                 <p>${snap.val().Location}</p>`
+                `<div id="info">
+         <h3>${snap.val().Name}</h3>
+         <p>${snap.val().CheckIn}</p>
+         <p>${snap.val().Location}</p>
+         </div>`
                 }                
             });
     })

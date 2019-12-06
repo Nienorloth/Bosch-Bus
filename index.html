@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,47 +11,28 @@
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
-
 </head>
 <body onload="initMap()">
     <header>
-
-            <img id="colorBosch" src="https://www.bosch-presse.de/pressportal/de/media/res/gfx/supergraphic.svg"/>
+            <img class="colorBosch" src="https://www.bosch-presse.de/pressportal/de/media/res/gfx/supergraphic.svg"/>
             <img id="nameBosch" src="./images/boschlogoname.jpeg"/>
-            <nav id="menuNav">
-                <ul>
-                    <li id="morning">Morning</li>
-                    <li id="evening">Evening</li>
-                    <li id="night">Night</li>
-                </ul>
+            <nav id="menuNav">  
+                <button id="morning">Morning</button>
+                <button id="evening">Evening</button> 
+                <button id="night">Night</button>
+                <button id="mapGraphic2">Gráfica</button>  
+                <button id="mapGraphic">Mapa</button>
             </nav>
     </header>
-
-    <section class='graphic'>
-        <button id="mapGraphic">Mapa</button>
-        <canvas id="myChart"></canvas>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-        <script src="app.js"></script>
-    </section>
-    <section class='graphic'>
+    <section id="dataEmployes">
         <section id="employes">
-            <!-- <select id="navemployes">
-                    <option value="name">Matutino</option> 
-                    <option value="dateTime" >Vespertino</option>
-                    <option value="value3">Nocturno</option>
-            </select> -->
-            <div class="row">
-              
-                    <div class="column">
-                        <!-- <button id="showButton">Mostrar</button> -->
-                      <pre id="card">
-                     <!--  <h3>Card 1</h3>
-                        <p>Some text</p>
-                        <p>Some text</p> -->
-                     </pre> 
-                 </div>
-            </div>
-
+                <section id="card">
+                </section> 
+        </section>
+    <section id="container">
+        <section id="graphic">
+                <canvas id="myChart"></canvas>                    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+                <script src="app.js"></script>
         </section>
         <section id="sectionMap">
             <button id="mapGraphic2">Grafica</button>  
@@ -68,6 +48,12 @@
         <script src="app.js"></script>
         <script src="index.js"></script>
     </section>
+</section>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+    <script src="app.js"></script>
+    <script src="index.js"></script>
 </body>
-
 </html>
