@@ -17,8 +17,8 @@
             <img class="colorBosch" src="https://www.bosch-presse.de/pressportal/de/media/res/gfx/supergraphic.svg"/>
             <img id="nameBosch" src="./images/boschlogoname.jpeg"/>
             <nav id="menuNav">  
-                <button id="mapGraphic2">Gráfica</button>  
-                <button id="mapGraphic">Mapa</button>
+                <button id="mapGraphic2">Ver Gráfica</button>  
+                <button id="mapGraphic">Ver Mapa</button>
             </nav>
     </header>
     <section id="dataEmployes">
@@ -57,15 +57,14 @@
                 </section> 
         </section>
     <section id="container">
-        <div class="chart-container" style="position: relative; height:200px; width:500px ">
+        <div class="chart-container" style="position: relative; height:480px; width:780px; margin-left: 50px; ">
                 <canvas id="myChart"></canvas>                    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
                 <script src="app.js"></script>
-        </div>
         <section id="sectionMap">
-            <button id="mapGraphic2">Grafica</button>  
-            <div id="map" style="width: 600px; height: 450px;" key="AIzaSyBb6HMtYcCglRUpupWFb4Azp7QyP65030g"></div>
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14931.586797963078!2d-103.39340025000001!3d20.67378125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1575571411352!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
-
+            <div id="map" style="width: 500px; height: 350px;" key="AIzaSyBb6HMtYcCglRUpupWFb4Azp7QyP65030g">                
+            </div>
+        </div>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14931.586797963078!2d-103.39340025000001!3d20.67378125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1575571411352!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->            
         </section>
         <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
         <script src="app.js"></script>

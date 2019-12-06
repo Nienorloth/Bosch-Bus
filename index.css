@@ -32,6 +32,7 @@ header{
     display: inline-block;
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 2%;
     padding-left:2%;
     padding-right:2%;
         color: rgba(255, 255, 255, 0.9) !important;
@@ -41,16 +42,16 @@ header{
         background: #318aac;
         border: 2px solid;
         border-color: #318aac;
-        position: relative;
+        position: absolute;
+        top: 75%;
+        right: 2%;
+        border-radius: 12px;
 }
     #menuNav button:hover {
         color: rgba(255, 255, 255, 1) !important;
         box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
         transition: all 0.2s ease;
-      }
-#mapGraphic, #mapGraphic2{
-    float: top;
-}
+    }
 #container{
     display: block;
     position: fixed;
@@ -101,4 +102,9 @@ h3,p{
 display: inline-block;
 vertical-align: middle;
 }
+#map {
+    margin-left: 20%;
+}
+
+
 
