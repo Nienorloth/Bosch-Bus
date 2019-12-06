@@ -42,8 +42,8 @@ header{
         border: 2px solid;
         border-color: #318aac;
         position: relative;
-      }
-      #menuNav button:hover {
+}
+    #menuNav button:hover {
         color: rgba(255, 255, 255, 1) !important;
         box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
         transition: all 0.2s ease;

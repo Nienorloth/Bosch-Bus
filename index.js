@@ -111,7 +111,7 @@ function initMap() {
          </div>`
     });
         
-    document.getElementById("morning").addEventListener("click", ()=>{
+    document.getElementById("1").addEventListener("click", ()=>{
         cardsContainer.innerHTML="";
         dbRef.on("child_added", snap => {
                 if(snap.val().Location ==="1"){
@@ -124,7 +124,7 @@ function initMap() {
         });
     })
 
-    document.getElementById("evening").addEventListener("click", ()=>{
+    document.getElementById("2").addEventListener("click", ()=>{
         cardsContainer.innerHTML="";
         dbRef.on("child_added", snap => {
                 if(snap.val().Location==="2"){
@@ -137,7 +137,7 @@ function initMap() {
         });
     })
     
-    document.getElementById("night").addEventListener("click", ()=>{
+    document.getElementById("3").addEventListener("click", ()=>{
         cardsContainer.innerHTML="";
         dbRef.on("child_added", snap => {
                 if(snap.val().Location==="3"){
